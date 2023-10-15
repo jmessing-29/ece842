@@ -1,0 +1,80 @@
+I Intro
+The ARQ simulator is a simple java-based simulator of ARQ (Automatic Repeat reQuest) protocols. 
+It currently supports three protocols: Stop-And-Wait, Go-Back-N and Selective Repeat. 
+The simulator assumes a point-to-point communication and provides probabilistic simulation of 
+the selected protocol given a variety of input parameters specifying such things as network 
+characteristics, error probabilities, and transmission characteristics. 
+Being a probabilistic simulation it is best to run each test case you are interested in several 
+times and average the results. 
+The user interface is very simple. Input is via command line arguments and output is text only.
+Command line arguments
+
+II How to use of the Simulator
+The ARQ simulator takes either 8 or 9 command line parameters. 
+There are 8 if the algorithm selected is SAW
+there are 9 if the algorithm is GBN or SR in which case an extra argument is needed: N-the sender window size.
+
+The command line syntax for running ARQsim is: 
+java ARQ trace propdelay rate numpkt pktsize errP dropP protocol [N]
+
+For example:
+//java ARQ 1 50 125000 50 125 0 0.05 SAW
+//java ARQ 0 30 125000 500 125 0.00006 0 GBN 10
+//java ARQ 0 270 125000 1000 125 0.0001 0.1 SR 20
+
+The command line arguments given to ARQ (and their types) are as follows:
+
+trace: 0-display trace,statistics and write statistics to log file;1-write statistics to log file
+
+propdelay: the propagation delay; an integer specifying the latency in milliseconds.
+
+rate: the link data rate (number of Bytes that can be sent in a second); an integer specifying the number of Bps.
+
+numpkt: the number of packets the sender is to send; an integer.
+
+pktsize: the packet size; an integer specifying the number of Bytes in each packet.
+
+errP: the bit error probability; a float (usually between 0.0 and 10e-4). Choosing errP > 10e-4 will result in constant re-sends and a non-terminating simulation so do not specify >10e-4.
+
+dropP: the probability of any packet being dropped; a float (usually between 0.0 and 0.5).
+
+protocol: the ARQ protocol you want to simulate. A string (case significant) containing one of:
+
+	SAW-to select the Stop And Wait protocol.
+	GBN-to select the Go Back N protocol.
+	SR -to select the Selective Repeated protocol.
+	If GBN or SR is selected then you must specify the sender's window size [N] by specifying a final, integer argument.
+
+III Log file
+If you plan to check the performance of a given protocol you may be interested in running long simulation. 
+In that case you may switch off the traces and after your simulations the result will be written into one of the following files:
+-logsaw.txt
+-loggbn.txt
+-logsr.txt
+Each new simulation's result is appended to the given file.
+The format of the log int each file is follwing:
+
+time #errorpkts #droppedpkts #ctrlpktssent #ctrlpktsrcvd #datapktssent #datapktsrcvd
+
+time: total transmission time
+#errorpkts: number of error packets (both - control and data) 
+#droppedpkts: number of dropped packets (both - -control and data)
+#ctrlpktsent: number of control packets sent
+#ctrlpktrcvd: number of control packets received
+#datapktssent: number of data packets sent
+#datapktsrcvd: number of data packets received
+
+For example:
+
+415 0 2 10 10 12 10
+307 0 0 10 10 10 10
+415 0 2 10 10 12 10
+
+Frist simulation:
+	time:		415
+	#errorpkts:	0
+	#droppedpkts:	2
+	#ctrlpktsent:	10
+	#ctrlpktrcvd:	10
+	#datapktssent:	12
+	#datapktsrcvd:	10
