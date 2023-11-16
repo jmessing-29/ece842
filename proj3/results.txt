@@ -1,0 +1,7 @@
+Node 0 's information: 
+Packets Generated: 95055  Packets Success: 4708  Packets Collided :90347  Throughput (Erlang) 0.148588  
+Node 1 's information: 
+Packets Generated: 95053  Packets Success: 4706  Packets Collided :90347  Throughput (Erlang) 0.148528  
+
+Network Information: 
+Packets Generated: 190108  Packets Success: 9414  Packets Collided :180694  Throughput (Erlang) 0.297115 
