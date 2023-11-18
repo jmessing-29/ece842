@@ -1,0 +1,109 @@
+ 
+ 
+ ############## experimemnt break: g = 0.25 ################# 
+Node 0 's information: 
+Packets Generated: 21995  Packets Success: 17160  Packets Collided :4835  Throughput (Erlang) 0.195044  
+Node 1 's information: 
+Packets Generated: 22138  Packets Success: 17303  Packets Collided :4835  Throughput (Erlang) 0.195399  
+
+Network Information: 
+Packets Generated: 44133  Packets Success: 34463  Packets Collided :9670  Throughput (Erlang) 0.390444  
+ 
+ ############## experimemnt break: g = 0.5 ################# 
+Node 0 's information: 
+Packets Generated: 39343  Packets Success: 23818  Packets Collided :15525  Throughput (Erlang) 0.302697  
+Node 1 's information: 
+Packets Generated: 39354  Packets Success: 23829  Packets Collided :15525  Throughput (Erlang) 0.302752  
+
+Network Information: 
+Packets Generated: 78697  Packets Success: 47647  Packets Collided :31050  Throughput (Erlang) 0.605449  
+ 
+ ############## experimemnt break: g = 0.75 ################# 
+Node 0 's information: 
+Packets Generated: 52631  Packets Success: 24859  Packets Collided :27772  Throughput (Erlang) 0.354245  
+Node 1 's information: 
+Packets Generated: 52747  Packets Success: 24975  Packets Collided :27772  Throughput (Erlang) 0.355115  
+
+Network Information: 
+Packets Generated: 105378  Packets Success: 49834  Packets Collided :55544  Throughput (Erlang) 0.709360  
+ 
+ ############## experimemnt break: g = 1.0 ################# 
+Node 0 's information: 
+Packets Generated: 63242  Packets Success: 23213  Packets Collided :40029  Throughput (Erlang) 0.367050  
+Node 1 's information: 
+Packets Generated: 63189  Packets Success: 23160  Packets Collided :40029  Throughput (Erlang) 0.366519  
+
+Network Information: 
+Packets Generated: 126431  Packets Success: 46373  Packets Collided :80058  Throughput (Erlang) 0.733570  
+ 
+ ############## experimemnt break: g = 1.25 ################# 
+Node 0 's information: 
+Packets Generated: 71406  Packets Success: 20445  Packets Collided :50961  Throughput (Erlang) 0.357901  
+Node 1 's information: 
+Packets Generated: 71247  Packets Success: 20286  Packets Collided :50961  Throughput (Erlang) 0.355910  
+
+Network Information: 
+Packets Generated: 142653  Packets Success: 40731  Packets Collided :101922  Throughput (Erlang) 0.713810  
+ 
+ ############## experimemnt break: g = 1.5 ################# 
+Node 0 's information: 
+Packets Generated: 77655  Packets Success: 17247  Packets Collided :60408  Throughput (Erlang) 0.333147  
+Node 1 's information: 
+Packets Generated: 77761  Packets Success: 17353  Packets Collided :60408  Throughput (Erlang) 0.334737  
+
+Network Information: 
+Packets Generated: 155416  Packets Success: 34600  Packets Collided :120816  Throughput (Erlang) 0.667884  
+ 
+ ############## experimemnt break: g = 1.75 ################# 
+Node 0 's information: 
+Packets Generated: 82596  Packets Success: 14350  Packets Collided :68246  Throughput (Erlang) 0.304040  
+Node 1 's information: 
+Packets Generated: 82562  Packets Success: 14316  Packets Collided :68246  Throughput (Erlang) 0.303445  
+
+Network Information: 
+Packets Generated: 165158  Packets Success: 28666  Packets Collided :136492  Throughput (Erlang) 0.607485  
+ 
+ ############## experimemnt break: g = 2.0 ################# 
+Node 0 's information: 
+Packets Generated: 86421  Packets Success: 11683  Packets Collided :74738  Throughput (Erlang) 0.270374  
+Node 1 's information: 
+Packets Generated: 86418  Packets Success: 11680  Packets Collided :74738  Throughput (Erlang) 0.270314  
+
+Network Information: 
+Packets Generated: 172839  Packets Success: 23363  Packets Collided :149476  Throughput (Erlang) 0.540688  
+ 
+ ############## experimemnt break: g = 2.25 ################# 
+Node 0 's information: 
+Packets Generated: 89441  Packets Success: 9398  Packets Collided :80043  Throughput (Erlang) 0.236418  
+Node 1 's information: 
+Packets Generated: 89416  Packets Success: 9373  Packets Collided :80043  Throughput (Erlang) 0.235855  
+
+Network Information: 
+Packets Generated: 178857  Packets Success: 18771  Packets Collided :160086  Throughput (Erlang) 0.472274  
+ 
+ ############## experimemnt break: g = 2.5 ################# 
+Node 0 's information: 
+Packets Generated: 91647  Packets Success: 7504  Packets Collided :84143  Throughput (Erlang) 0.204698  
+Node 1 's information: 
+Packets Generated: 91810  Packets Success: 7667  Packets Collided :84143  Throughput (Erlang) 0.208774  
+
+Network Information: 
+Packets Generated: 183457  Packets Success: 15171  Packets Collided :168286  Throughput (Erlang) 0.413472  
+ 
+ ############## experimemnt break: g = 2.75 ################# 
+Node 0 's information: 
+Packets Generated: 93589  Packets Success: 5956  Packets Collided :87633  Throughput (Erlang) 0.175010  
+Node 1 's information: 
+Packets Generated: 93606  Packets Success: 5973  Packets Collided :87633  Throughput (Erlang) 0.175478  
+
+Network Information: 
+Packets Generated: 187195  Packets Success: 11929  Packets Collided :175266  Throughput (Erlang) 0.350487  
+ 
+ ############## experimemnt break: g = 3.0 ################# 
+Node 0 's information: 
+Packets Generated: 95055  Packets Success: 4708  Packets Collided :90347  Throughput (Erlang) 0.148588  
+Node 1 's information: 
+Packets Generated: 95053  Packets Success: 4706  Packets Collided :90347  Throughput (Erlang) 0.148528  
+
+Network Information: 
+Packets Generated: 190108  Packets Success: 9414  Packets Collided :180694  Throughput (Erlang) 0.297115 
